@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>989f9ca1-5a7e-4a3e-9ab4-136f34c3d82c</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.0.0" />
+    <PackageReference Include="MediatR" Version="13.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Quillity.Application.Projects\Quillity.Application.Projects.csproj" />
+    <ProjectReference Include="..\Quillity.Application.Workspaces\Quillity.Application.Workspaces.csproj" />
+    <ProjectReference Include="..\Quillity.Application\Quillity.Application.csproj" />
+    <ProjectReference Include="..\Quillity.Auth\Quillity.Auth.csproj" />
+    <ProjectReference Include="..\Quillity.Infrastructure\Quillity.Infrastructure.csproj" />
+    <ProjectReference Include="..\Quillity.Logging\Quillity.Logging.csproj" />
+  </ItemGroup>
+
+</Project>

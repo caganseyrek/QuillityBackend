@@ -1,0 +1,47 @@
+workspace members
+
+GET /api/v1/workspaces/{workspaceId}/members - get all members
+GET /api/v1/workspaces/{workspaceId}/members/{userId} - get a member
+
+POST /api/v1/workspaces/{workspaceId}/members - add a new member
+PATCH /api/v1/workspaces/{workspaceId}/members/{userId} - update a member role (ONLY ROLE)
+DELETE /api/v1/workspaces/{workspaceId}/members/{userId} - delete a member
+
+POST /api/v1/workspaces/{workspaceId}/leave - deletes the current user as member
+
+---
+workspace estimates
+
+GET /api/v1/workspaces/{workspaceId}/estimates
+GET /api/v1/workspaces/{workspaceId}/estimates/{estimateId}
+
+POST /api/v1/workspaces/{workspaceId}/estimates
+PATCH /api/v1/workspaces/{workspaceId}/estimates/{estimateId}
+DELETE /api/v1/workspaces/{workspaceId}/estimates/{estimateId}
+
+POST /api/v1/workspaces/{workspaceId}/estimates/{estimateId}/items
+PATCH /api/v1/workspaces/{workspaceId}/estimates/{estimateId}/items/{itemId}
+DELETE /api/v1/workspaces/{workspaceId}/estimates/{estimateId}/items/{itemId}
+
+POST /api/v1/workspaces/{workspaceId}/leave
+
+---
+auth
+
+POST /api/v1/user/register - register user
+POST /api/v1/user/login - login user
+POST /api/v1/user/logout - logout user
+POST /api/v1/user/refresh - refresh user token
+
+POST /api/v1/user/reset-password - send forgot password email
+POST /api/v1/user/reset-password/{token} - reset password
+
+POST /api/v1/user/verify-email - send email verification email
+POST /api/v1/user/verify-email/{token} - verify email
+
+---
+user
+
+GET /api/v1/user/profile - get user profile
+GET /api/v1/user/preferences - get user preferences
+PATCH /api/v1/user/preferences - update user preferences
